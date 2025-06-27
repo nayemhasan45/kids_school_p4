@@ -37,9 +37,11 @@ h3 {
     font-size: 2rem;
     font-weight: 700;
 }
-img{
+
+img {
     width: 100%;
 }
+
 /* common shared styles */
 .p_btn {
     width: 197px;
@@ -51,16 +53,18 @@ img{
     font-size: 1.1rem;
     font-weight: 600;
 }
-.s_btn{
+
+.s_btn {
     width: 197px;
     padding: 10px;
     color: white;
-    background-color:black;
+    background-color: black;
     border: none;
     border-radius: 12px;
     font-size: 1.1rem;
     font-weight: 600;
 }
+
 .p_width {
     width: 80%;
     margin: 0 auto;
@@ -90,36 +94,71 @@ nav {
     text-decoration: none;
 
 }
-.nav_img{
+
+.nav_img {
     display: none;
 }
 
-/* navbar responsive  */
-@media screen and (max-width:576px) {
-    .nav_logo>h3{
-        display: none;
-    }
-    .nav_link{
-        display: none;
-    }   
-    .nav_btn{
-        display: none;
-    }
-    .nav_img{
-        display: block;
-    }
-}
+
 
 /* banner style  */
-.banner{
+.banner {
     gap: 3.1rem;
 }
-.banner_content{
+
+.banner_content {
     width: 60%;
 }
-.banner_content p{
+
+.banner_content p {
     padding: 1.5rem 0;
 }
-.banner_img{
+
+.banner_img {
     width: calc(100%-60%-33.1rem);
+}
+
+/* responsive design  */
+
+@media screen and (max-width:576px) {
+
+    /* navbar responsive  */
+    .nav_logo>h3 {
+        display: none;
+    }
+
+    .nav_link {
+        display: none;
+    }
+
+    .nav_btn {
+        display: none;
+    }
+
+    .nav_img {
+        display: block;
+    }
+
+    /* banner responsive  */
+    .banner {
+        flex-direction: column-reverse;
+        padding: 20px 0;
+        text-align: center;
+
+    }
+    .banner h1{
+        font-size: 2rem;
+        line-height: normal;
+    }
+    .banner p{
+        font-size: 1rem;
+    }
+    .banner_content {
+        width: 100%;
+    }
+
+
+    .banner_img {
+        width: 100%;
+    }
 }
