@@ -75,3 +75,22 @@ nav {
     text-decoration: none;
 
 }
+.nav_img{
+    display: none;
+}
+
+/* navbar responsive  */
+@media screen and (max-width:576px) {
+    .nav_logo>h3{
+        display: none;
+    }
+    .nav_link{
+        display: none;
+    }   
+    .nav_btn{
+        display: none;
+    }
+    .nav_img{
+        display: block;
+    }
+}
