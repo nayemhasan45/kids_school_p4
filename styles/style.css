@@ -25,7 +25,11 @@ header {
     background-color: rgba(255, 255, 255, 1);
 }
 
-h1 {}
+h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 3.8rem;
+}
 
 h2 {}
 
@@ -33,7 +37,9 @@ h3 {
     font-size: 2rem;
     font-weight: 700;
 }
-
+img{
+    width: 100%;
+}
 /* common shared styles */
 .p_btn {
     width: 197px;
@@ -45,7 +51,16 @@ h3 {
     font-size: 1.1rem;
     font-weight: 600;
 }
-
+.s_btn{
+    width: 197px;
+    padding: 10px;
+    color: white;
+    background-color:black;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 .p_width {
     width: 80%;
     margin: 0 auto;
@@ -93,4 +108,18 @@ nav {
     .nav_img{
         display: block;
     }
+}
+
+/* banner style  */
+.banner{
+    gap: 3.1rem;
+}
+.banner_content{
+    width: 60%;
+}
+.banner_content p{
+    padding: 1.5rem 0;
+}
+.banner_img{
+    width: calc(100%-60%-33.1rem);
 }
