@@ -174,16 +174,18 @@ nav {
 }
 
 /* curriculum  button */
-.curriculum_btn{
+.curriculum_btn {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .see_more {
     gap: .62rem;
 }
+
 .see_more .left button,
-.right button{
+.right button {
     width: 3.75rem;
     height: 3.75rem;
     padding: 17px 0px 19px 0px;
@@ -194,16 +196,22 @@ nav {
     align-items: center;
     border: none;
 }
-.see_more .left button i , .right button i{
+
+.see_more .left button i,
+.right button i {
     font-size: 1.5rem;
     font-weight: 900;
     color: white;
 }
-/* responsive design  */
+
+/* responsive design  for mobile device*/
 
 @media screen and (max-width:576px) {
 
     /* navbar responsive  */
+    /* .nav_logo img{
+        width: 50%;
+    } */
     .nav_logo>h3 {
         display: none;
     }
@@ -245,4 +253,26 @@ nav {
     .banner_img {
         width: 100%;
     }
+    .banner_img img{
+        width: 70%;
+    }
+
+    /* curriculum section  */
+    .curriculum {
+        padding: 2.5rem 0;
+    }
+
+    .curriculum_card {
+        padding: 2.5rem 0;
+        grid-template-columns: 1fr;
+        gap: 1.37rem;
+    }
+
+    /* curriculum button  */
+    .curriculum_btn {
+        display: none;
+    }
 }
+
+/* responsive design  for medium device*/
+@media screen and (min-width:577px) and (max-width:992px) {}
