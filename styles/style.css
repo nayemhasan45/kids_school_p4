@@ -35,6 +35,7 @@ h2 {
     font-size: 2.8rem;
     font-weight: 700;
     line-height: 3.5rem;
+    text-align: center;
 }
 
 h3 {
@@ -128,9 +129,7 @@ nav {
 
 }
 
-.curriculum h2 {
-    text-align: center;
-}
+
 
 .curriculum_card {
     padding: 5rem 0;
@@ -204,6 +203,64 @@ nav {
     color: white;
 }
 
+/* stories section  */
+.stories {
+    padding: 3.75rem 0;
+}
+.stories_btn{
+    text-align: center;
+}
+.stories_card {
+    gap: 1.25rem;
+    padding: 5rem 0;
+    display: flex;
+    align-items: stretch;
+}
+.stories_card .main-card{
+    width: 50%;
+    flex-grow: 1;
+}
+.stories_card .grid_card{
+    width: calc(100%-50%-1.25rem);
+}
+.stories_card .card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+.stories_card .card img{
+    width: 100%;
+}
+.date-badge {
+    position: absolute;
+    bottom:-9px;
+    left: 1.5rem;
+    background:rgba(60, 216, 232, 1);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.stories_card .card .card_content{
+    padding-left: 1.5rem;
+}
+.stories_card .card .card_content h4{
+    padding: 3.1rem 0;
+}
+.card_content p{
+    padding-bottom: 3.1rem;
+}
+.stories_card .grid_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    flex: 1 1 48%;
+
+}
+
 /* responsive design  for mobile device*/
 
 @media screen and (max-width:576px) {
@@ -253,7 +310,8 @@ nav {
     .banner_img {
         width: 100%;
     }
-    .banner_img img{
+
+    .banner_img img {
         width: 70%;
     }
 
