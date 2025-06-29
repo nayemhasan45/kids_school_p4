@@ -207,22 +207,27 @@ nav {
 .stories {
     padding: 3.75rem 0;
 }
-.stories_btn{
+
+.stories_btn {
     text-align: center;
 }
+
 .stories_card {
     gap: 1.25rem;
     padding: 5rem 0;
     display: flex;
     align-items: stretch;
 }
-.stories_card .main-card{
+
+.stories_card .main-card {
     width: 50%;
     flex-grow: 1;
 }
-.stories_card .grid_card{
+
+.stories_card .grid_card {
     width: calc(100%-50%-1.25rem);
 }
+
 .stories_card .card {
     background: #ffffff;
     border-radius: 12px;
@@ -230,29 +235,35 @@ nav {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
     position: relative;
 }
-.stories_card .card img{
+
+.stories_card .card img {
     width: 100%;
 }
+
 .date-badge {
     position: absolute;
-    bottom:-9px;
+    bottom: -9px;
     left: 1.5rem;
-    background:rgba(60, 216, 232, 1);
+    background: rgba(60, 216, 232, 1);
     color: #fff;
     padding: 10px 14px;
     border-radius: 20px;
     font-size: 15px;
     font-weight: 500;
 }
-.stories_card .card .card_content{
+
+.stories_card .card .card_content {
     padding-left: 1.5rem;
 }
-.stories_card .card .card_content h4{
+
+.stories_card .card .card_content h4 {
     padding: 3.1rem 0;
 }
-.card_content p{
+
+.card_content p {
     padding-bottom: 3.1rem;
 }
+
 .stories_card .grid_card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -329,6 +340,38 @@ nav {
     /* curriculum button  */
     .curriculum_btn {
         display: none;
+    }
+
+    /* our stories  */
+    .stories {
+        padding: 2.5rem 0;
+    }
+
+    .stories_card {
+        gap: 1rem;
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: stretch;
+    }
+
+    .stories_card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stories_card .main-card {
+        display: none;
+    }
+
+    .date-badge {
+        position: absolute;
+        bottom: -9px;
+        left: 1.5rem;
+        background: rgba(60, 216, 232, 1);
+        color: #fff;
+        padding: 5px 7px;
+        border-radius: 20px;
+        font-size: 10px;
+        font-weight: 500;
     }
 }
 
