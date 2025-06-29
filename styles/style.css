@@ -204,11 +204,12 @@ nav {
 }
 
 /* stories section  */
-.stories_bg{
+.stories_bg {
     background:
         url('../assets/bg.png') repeat-x 100px 100px,
         linear-gradient(to top, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3));
 }
+
 .stories {
     padding: 3.75rem 0;
 }
@@ -372,7 +373,7 @@ footer {
 
     /* curriculum section  */
     .curriculum {
-        padding: 2.5rem 0;
+        padding: 2.5rem 0 0 0;
     }
 
     .curriculum_card {
@@ -416,6 +417,17 @@ footer {
         border-radius: 20px;
         font-size: 10px;
         font-weight: 500;
+    }
+
+    /* footer section  */
+    footer{
+        height: auto;
+        padding: 3.75rem 0;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
     }
 }
 
