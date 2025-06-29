@@ -1,0 +1,46 @@
+@media screen and (min-width:577px) and (max-width:992px) {
+    /* navbar related skill  */
+    .nav_img {
+        display: block;
+    }
+    .nav_link {
+        display: none;
+    }
+    .nav_btn {
+        display: none;
+    }
+    /* banner section  */
+    .banner {
+        flex-direction: column-reverse;
+        padding: 20px 0;
+        text-align: center;
+    }
+    /* curriculum section  */
+    .curriculum_card {
+        padding: 3rem 0;
+        grid-template-columns:repeat(2,1fr);
+        gap: 1.75rem;
+    }
+
+    /* stories section  */
+    .stories_card{
+        flex-direction: column;
+    }
+    .stories_card .main-card{
+        width: 100%;
+    }
+    /* footer section  */
+    footer{
+        height: auto;
+        padding: 6rem 0;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:70px;
+    }
+    .footer_link{
+        grid-column: 1 / -1; 
+        text-align: center;
+    }
+}
